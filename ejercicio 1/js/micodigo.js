@@ -1,25 +1,29 @@
-const nombre = document.getElementById("nombre")
-const marca = document.getElementById("marca")
-const stock = document.getElementById("stock")
-const agregar = document.getElementById("agregar")
-
-
-
 
 let array_nombre = []
 let array_marca = []
 let array_stock = []
+const agregar = document.getElementById("agregar")
 
 agregar.addEventListener("click", () =>{
 
 
-    const nombre1 = (nombre.value) 
-    const marca1 = (marca.value)
-    const stock1 = (stock.value)
+    const nombre = document.getElementById("nombre").value;
+    const marca = document.getElementById("marca").value;
+    const stock = document.getElementById("stock").value;
 
-    array_nombre.push(nombre1)
-    array_marca.push(marca1)
-    array_stock.push(stock1)
+    const captura = -1
+
+    for(let i = -1; i<array_nombre; i++)
+
+
+
+
+
+
+
+    array_nombre.push(nombre)
+    array_marca.push(marca)
+    array_stock.push(stock)
 
     agregar1()
 })
