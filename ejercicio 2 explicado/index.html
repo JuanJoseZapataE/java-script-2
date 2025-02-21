@@ -7,38 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body class="container">
-    <h1>Prestamo</h1>
 
-    <div class="row">
+    <h1>Tabla de Amortizacion</h1>
+    
+    <div class="row mt-4">
         <div class="col">
-            <input type="number" id="valor" placeholder="Ingrese el valor del prestamo" class="mb-2">
+            <input type="number" id="valorcredito" placeholder="Ingrese el valor del prestamo" class="mb-2">
             <br>
-            <input type="number" id="cuotas" placeholder="Ingrese las cuotas" class="mb-2">
+            <input type="number" id="numerocuotas" placeholder="Ingrese las cuotas" class="mb-2">
             <br>
-            <label for="interes">tasa de interes <input type="number" id="interes" placeholder="Ingrese la tasa de interes">mensual</label>
+            <input type="number" id="tasainteres" placeholder="Ingrese la tasa de interes">
             <br>
-            
             <button id="calcular" type="submit" class="btn btn-secondary">Calcular</button>
-        </div>
-        <div class="col">
             <p>total a pagar: <span id="total"></span></p>
-            <h2>cuotas iguales:</h2>
+            <p><input type="checkbox" id="botoncheck">Cuotas iguales : <span id="cuotas_iguales"></span></p>
         </div>
     </div>
 
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>valor</th>
-                <th>cuotas</th>
-                <th>nuevo saldo</th>
+                <th># cuota</th>
+                <th>saldo</th>
+                <th>valor actual</th>
+                <th>saldo actual</th>
             </tr>
         </thead>
-        <tbody id="datos">
+        <tbody id="listacuotas">
 
         </tbody>
     </table>
 
-    <script src="js/prestamo.js"></script>
+
+    <script src="js/matriz.js"></script>
 </body>
 </html>

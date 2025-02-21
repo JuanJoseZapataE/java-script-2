@@ -19,8 +19,6 @@ agregar.addEventListener("click", () =>{
 
 
 
-
-
     array_nombre.push(nombre)
     array_marca.push(marca)
     array_stock.push(stock)
