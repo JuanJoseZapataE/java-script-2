@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    text-align: center;
+}
+
+
+.contenedor{
+    margin: 2em auto;
+    width: 700px;
+}
+
+.celda{
+    width: 130px;
+    height: 130px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 0.5em;
+    vertical-align: top;
+    line-height: 130px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+#mensaje{
+    color: greenyellow;
+    font-size: 4em;
+}
